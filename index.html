@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test RevoU Bootcamp</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-    <p style="color: blue;">Hello World!</p>
+    <p class="text-3xl pb-4 text-red-500 
+    font-bold pl-6 pt-6 bg-yellow-100 ">Hello World!</p>
     <hr>
     <p>Halo nama saya <br> Awiii</p>
 
@@ -80,10 +82,31 @@
         <input type="text">
         <br>
         <label>umur</label>
-        <input type="number" min="0" max="120"/>
+        <input type="number" min="0" max="120" placeholder="25"/>
+        <br>
+        <label>Password</label>
+        <input type="password">
+        <br>
+        <label>JK</label>
+        <input type="radio" value="male" name="jenis-kelamin">Laki-laki 
+        <input type="radio" value="female" name="jenis-kelamin">Perempuan
+
+        <br>
+        <label>makanan fav</label>
+        <select>
+            <option value="nasgor">nasgor</option>
+            <option value="sate">sate</option>
+            <option value="ayam">ayam</option>
+        </select>
+        <br>
         <label>Comments</label>
+        <br>
         <textarea rows="5" cols="30" placeholder="Tulis disini.."></textarea>
         <br>
+        <input type="checkbox" />Saya setuju s&k
+        <br>
+        <input type="submit" value="Kirim">
+        <button type="submit">Send</button>
      </form>
      <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quis rem reiciendis odit corporis, sint minima, delectus nihil quae minus est, sed accusamus voluptate! Error a libero pariatur aliquam unde?</p>
 </body>
